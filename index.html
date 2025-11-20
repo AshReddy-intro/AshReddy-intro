@@ -61,10 +61,6 @@
       background:rgba(0,0,0,0.05);
     }
     .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:9px;font-weight:600;font-size:15px;}
-    .contact-email{
-      font-size:14px;
-      color:var(--muted);
-    }
 
     /* HERO */
     .hero{
@@ -79,6 +75,22 @@
     }
     .hero h1{font-size:34px;margin:0 0 14px;}
     .hero p.lead{margin:0;color:var(--muted); font-size:16px;}
+    .hero .hero-links{
+      margin-top:20px;
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      flex-wrap:wrap;
+    }
+    .hero .hero-links .cta-row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .hero .hero-links .email{
+      font-size:14px;
+      color:var(--muted);
+    }
     
     .portrait{
       width:320px;
@@ -136,8 +148,6 @@
         <a href="#guiding">Mantras</a>
         <a href="#hobbies">Hobbies</a>
       </nav>
-
-      <div class="contact-email">asrith.dundumalla@gmail.com</div>
     </header>
 
     <!-- HERO -->
@@ -146,9 +156,12 @@
         <h1>Ash Reddy — Head of Product, Agentic AI & Intelligent Workflows</h1>
         <p class="lead">I’m an expert in architecting agentic AI systems, with practical knowledge of the AI/LLM landscape, model types, AI engines, and their optimal applications. I’m a former Big 4 management consultant with experience in leading digital transformation initiatives, redesigning operational models, and shaping product strategy.</p>
 
-        <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
-          <a href="Ash_Reddy_Resume.pdf" download class="cta">Download Resume</a>
-          <a href="https://www.linkedin.com/in/ashreddy17" target="_blank" class="cta">LinkedIn</a>
+        <div class="hero-links">
+          <div class="cta-row">
+            <a href="Ash_Reddy_Resume.pdf" download class="cta">Download Resume</a>
+            <a href="https://www.linkedin.com/in/ashreddy17" target="_blank" class="cta">LinkedIn</a>
+          </div>
+          <div class="email">Prefer email? Reach me at: <strong>asrith.dundumalla@gmail.com</strong></div>
         </div>
       </div>
 
