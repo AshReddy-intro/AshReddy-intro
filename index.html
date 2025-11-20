@@ -6,63 +6,64 @@
   <title>Ash Reddy — Head of Product, Agentic AI & Intelligent Workflows</title>
   <meta name="description" content="Ash Reddy — Head of Product, Agentic AI & Intelligent Workflows. AI/LLM systems, Bigstream, EY, DataMaze. Strategic & technical product leader." />
   <link rel="icon" href="data:,">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
   <style>
     :root{
       --bg:#ffffff; --text:#0b0b0b; --muted:#6b6f76; --accent:#0041D9;
       --radius:10px; --maxwidth:980px;
     }
     *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color:var(--text); background:var(--bg); -webkit-font-smoothing:antialiased;
-      line-height:1.45;
-    }
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:var(--maxwidth);margin:48px auto;padding:0 24px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:14px}
+    html,body{height:100%; margin:0; font-family: 'Inter', sans-serif; line-height:1.5;}
+    a{color:inherit; text-decoration:none;}
+    h1,h2,h3,h4,h5,h6{font-family:'Montserrat', sans-serif;}
+    .wrap{max-width:var(--maxwidth);margin:48px auto;padding:0 24px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px; flex-wrap:wrap;}
+    .brand{display:flex;align-items:center;gap:14px;}
     .logo{
       width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#111);
       display:flex;align-items:center;justify-content:center;color:white;font-weight:700;
       font-size:18px;box-shadow:0 6px 18px rgba(0,0,0,0.08)
     }
-    nav{display:flex;gap:18px;align-items:center}
-    nav a{color:var(--muted);font-size:15px}
-    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:9px;font-weight:600}
-    .hero{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:start;margin-top:40px}
-    .hero h1{font-size:34px;margin:0 0 14px}
-    .hero p.lead{margin:0;color:var(--muted)}
+    nav{display:flex;gap:18px;align-items:center; flex-wrap:wrap;}
+    nav a{color:var(--muted);font-size:15px;font-weight:500;}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:9px;font-weight:600;font-size:15px;}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:start;margin-top:40px;}
+    .hero h1{font-size:34px;margin:0 0 14px;}
+    .hero p.lead{margin:0;color:var(--muted); font-size:16px;}
     .portrait{
       width:320px;height:320px;border-radius:14px;background:linear-gradient(180deg,#f5f7fb,#eef3ff);
       display:flex;align-items:center;justify-content:center;font-weight:700;color:#222;
       box-shadow:0 12px 40px rgba(20,30,60,0.08)
     }
-    section{margin-top:64px}
-    .section-title{display:flex;align-items:baseline;gap:12px}
-    .section-title h2{margin:0;font-size:20px}
-    .muted{color:var(--muted);font-size:15px}
-    .columns{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
-    .card{padding:18px;border-radius:12px;border:1px solid rgba(10,10,10,0.04);background:white}
-    .card h3{margin:0 0 6px;font-size:16px}
-    .card p{margin:0;color:var(--muted);font-size:14px}
-    .project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:14px}
-    .project{padding:14px;border-radius:10px;border:1px solid rgba(10,10,10,0.04)}
-    .project h4{margin:0 0 8px;font-size:15px}
-    .project p{margin:0;color:var(--muted);font-size:14px}
-    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(0,65,217,0.08);color:var(--accent);font-weight:600;font-size:13px}
-    footer{margin:64px 0 48px;color:var(--muted);font-size:14px;text-align:center}
+    section{margin-top:64px;}
+    .section-title{display:flex;align-items:baseline;gap:12px;}
+    .section-title h2{margin:0;font-size:22px;}
+    .muted{color:var(--muted);font-size:15px;}
+    .columns{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;}
+    .card{padding:18px;border-radius:12px;border:1px solid rgba(10,10,10,0.04);background:white;}
+    .card h3{margin:0 0 6px;font-size:16px;}
+    .card p{margin:0;color:var(--muted);font-size:15px;}
+    .project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:14px;}
+    .project{padding:14px;border-radius:10px;border:1px solid rgba(10,10,10,0.04);}
+    .project h4{margin:0 0 8px;font-size:15px;}
+    .project p{margin:0;color:var(--muted);font-size:14px;}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(0,65,217,0.08);color:var(--accent);font-weight:600;font-size:13px;}
+    footer{margin:64px 0 48px;color:var(--muted);font-size:14px;text-align:center;}
     @media (max-width:880px){
-      .hero{grid-template-columns:1fr;align-items:center}
-      .portrait{width:100%;height:260px}
-      .columns{grid-template-columns:1fr}
-      .project-grid{grid-template-columns:1fr}
-      header{flex-direction:column;align-items:flex-start;gap:12px}
+      .hero{grid-template-columns:1fr;align-items:center;}
+      .portrait{width:100%;height:260px;}
+      .columns{grid-template-columns:1fr;}
+      .project-grid{grid-template-columns:1fr;}
+      header{flex-direction:column;align-items:flex-start;gap:12px;}
     }
   </style>
 </head>
 <body>
   <div class="wrap">
+    <!-- HEADER -->
     <header>
       <div class="brand">
         <div class="logo">AR</div>
@@ -74,6 +75,7 @@
 
       <nav aria-label="Primary navigation">
         <a href="#about">About</a>
+        <a href="#certifications">Certifications</a>
         <a href="#career">Career</a>
         <a href="#guiding">Mantras</a>
         <a href="#hobbies">Hobbies</a>
@@ -81,15 +83,16 @@
       </nav>
     </header>
 
-    <!-- HERO -->
+    <!-- HERO + CONTACT ON TOP -->
     <main class="hero" role="main">
       <div>
         <h1>Ash Reddy — Head of Product, Agentic AI & Intelligent Workflows</h1>
         <p class="lead">I’m an expert in architecting agentic AI systems, with practical knowledge of the AI/LLM landscape, model types, AI engines, and their optimal applications. I’m a former Big 4 management consultant with experience in leading digital transformation initiatives, redesigning operational models, and shaping product strategy.</p>
 
         <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
-          <a class="cta" href="#career">View Career Progression</a>
           <a href="resume.pdf" download class="cta">Download Resume</a>
+          <a href="mailto:asrith.dundumalla@gmail.com" class="cta">Email</a>
+          <a href="https://www.linkedin.com/in/ashreddy17" target="_blank" class="cta">LinkedIn</a>
         </div>
       </div>
 
@@ -122,6 +125,16 @@
 
         <p class="muted" style="margin-top:12px"><strong>Tools & Platforms:</strong> Langflow, LangChain, Microsoft Autogen, v0, Cursor, Replit AI, Tavily Search, Postman, Microsoft Copilot, Zapier, Flowise, CrewAI, Amazon Bedrock, Google Vertex AI, Dataiku Agent Connect, and more — experimenting with faster prototyping, orchestration, and AI-driven product deployment.</p>
       </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <div class="section-title">
+        <h2>Certifications & Licenses</h2>
+      </div>
+      <p class="muted" style="margin-top:12px; line-height:1.6; font-size:15px;">
+        AI Product Development: Technical Feasibility and Prototyping | Dataiku Advanced Designer | Dataiku Core Designer | Dataiku Generative AI Practitioner | Dataiku ML Practitioner | Dataiku MLOps Practitioner | Integrating AI into the Product Architecture | Microsoft Copilot: The Art of Prompt Writing | AI Agents for Product Leaders | Generative AI for Product Managers | Product Management: Building a Product Roadmap | Cypher Fundamentals | Neo4j Fundamentals | Machine Learning A-Z: Hands-on Python and R | Python | Tableau 10 | AWS Certified Cloud Practitioner | Snowflake SnowPro Core
+      </p>
     </section>
 
     <!-- CAREER PROGRESSION -->
@@ -188,25 +201,7 @@
       </ul>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="section-title">
-        <h2>Contact</h2>
-        <div class="muted">Let’s connect</div>
-      </div>
-
-      <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:14px">
-        <div style="flex:1;min-width:260px">
-          <div class="card">
-            <h3>Get in touch</h3>
-            <p class="muted">Email: <a href="mailto:asrith.dundumalla@gmail.com">asrith.dundumalla@gmail.com</a></p>
-            <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/ashreddy17" target="_blank" rel="noopener">linkedin.com/in/ashreddy17</a></p>
-            <p style="margin-top:10px"><a href="resume.pdf" download class="cta">Download Resume</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- FOOTER -->
     <footer>
       © <span id="year"></span> Ash Reddy — Head of Product, Agentic AI & Intelligent Workflows
     </footer>
