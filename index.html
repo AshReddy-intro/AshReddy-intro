@@ -35,7 +35,13 @@
       box-shadow:0 8px 24px rgba(0,0,0,0.08);
     }
 
-    header{display:flex;align-items:center;justify-content:space-between;gap:20px; flex-wrap:wrap;}
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+    }
     .brand{display:flex;align-items:center;gap:14px;}
     .logo{
       width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#111);
@@ -43,8 +49,22 @@
       font-size:18px;box-shadow:0 6px 18px rgba(0,0,0,0.08)
     }
     nav{display:flex;gap:18px;align-items:center; flex-wrap:wrap;}
-    nav a{color:var(--muted);font-size:15px;font-weight:500;}
+    nav a{
+      color:var(--muted);
+      font-size:15px;
+      font-weight:500;
+      padding:6px 10px;
+      border-radius:6px;
+      transition: background 0.2s;
+    }
+    nav a:hover{
+      background:rgba(0,0,0,0.05);
+    }
     .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:9px;font-weight:600;font-size:15px;}
+    .contact-email{
+      font-size:14px;
+      color:var(--muted);
+    }
 
     /* HERO */
     .hero{
@@ -115,8 +135,9 @@
         <a href="#career">Career</a>
         <a href="#guiding">Mantras</a>
         <a href="#hobbies">Hobbies</a>
-        <a class="cta" href="#contact">Contact</a>
       </nav>
+
+      <div class="contact-email">asrith.dundumalla@gmail.com</div>
     </header>
 
     <!-- HERO -->
@@ -126,8 +147,7 @@
         <p class="lead">I’m an expert in architecting agentic AI systems, with practical knowledge of the AI/LLM landscape, model types, AI engines, and their optimal applications. I’m a former Big 4 management consultant with experience in leading digital transformation initiatives, redesigning operational models, and shaping product strategy.</p>
 
         <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
-          <a href="resume.pdf" download class="cta">Download Resume</a>
-          <a href="mailto:asrith.dundumalla@gmail.com" class="cta">Email</a>
+          <a href="Ash_Reddy_Resume.pdf" download class="cta">Download Resume</a>
           <a href="https://www.linkedin.com/in/ashreddy17" target="_blank" class="cta">LinkedIn</a>
         </div>
       </div>
